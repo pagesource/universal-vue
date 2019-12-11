@@ -8,10 +8,14 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "storybook": "start-storybook"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@storybook/vue": "^5.2.8",
+    "babel-preset-vue": "^2.0.2"
+  }
 }
