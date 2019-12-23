@@ -1,10 +1,11 @@
 <template>
-<button
-  @click="$emit('click')"
-  class="button"
-  :class="variant">
-  <slot>Button</slot>
-</button>
+  <button
+    class="button"
+    :class="variant"
+    @click="$emit('click')"
+  >
+    <slot>Button</slot>
+  </button>
 </template>
 <script>
   export default {
