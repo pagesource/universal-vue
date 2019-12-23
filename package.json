@@ -9,7 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "lint:css": "stylelint components/**/*.css --fix;exit 0",
+    "lint:css:fix": "npm run lint:css --fix"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
@@ -25,6 +27,8 @@
     "@storybook/addon-options": "^5.2.8",
     "@storybook/addon-storysource": "^5.2.8",
     "@storybook/vue": "^5.2.8",
-    "babel-preset-vue": "^2.0.2"
+    "babel-preset-vue": "^2.0.2",
+    "stylelint": "^12.0.0",
+    "stylelint-config-recommended": "^3.0.0"
   }
 }
