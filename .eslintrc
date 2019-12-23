@@ -4,7 +4,8 @@
       "node": true,
       "es6": true
   },
-  "extends": ["eslint:recommended","plugin:vue/recommended"],
+  "plugins": [ "prettier"],
+  "extends": ["eslint:recommended","plugin:vue/recommended","prettier"],
   "parserOptions": {
     "parser": "babel-eslint",
      "ecmaVersion": 6,
@@ -87,6 +88,7 @@
       "no-new-wrappers": 0,
       "no-invalid-this": 0,
       "no-useless-escape": 0,
-      "no-console": 0
+      "no-console": 0,
+      "prettier/prettier": "error"
   }
 }

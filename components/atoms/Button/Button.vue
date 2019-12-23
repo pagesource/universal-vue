@@ -1,9 +1,7 @@
+<!-- @format -->
+
 <template>
-  <button
-    class="button"
-    :class="variant"
-    @click="$emit('click')"
-  >
+  <button class="button" :class="variant" @click="$emit('click')">
     <slot>Button</slot>
   </button>
 </template>
@@ -11,12 +9,12 @@
   export default {
     name: 'Button',
     props: {
-    variant: {
-      type: String,
-      default: 'default',
-    }
-  }
-  }
+      variant: {
+        type: String,
+        default: 'default',
+      },
+    },
+  };
 </script>
 <style scoped>
   .button {
@@ -24,13 +22,13 @@
     height: 50px;
   }
   .dafault {
-    background-color:white;
+    background-color: white;
   }
-  .rounded{
+  .rounded {
     border-radius: 50px;
     background-color: lightcyan;
   }
-  .disabled{
-     background-color:lightgray;
+  .disabled {
+    background-color: lightgray;
   }
 </style>

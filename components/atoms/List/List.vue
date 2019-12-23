@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <template>
   <div class="list">
     Default List
@@ -5,11 +7,11 @@
 </template>
 <script>
   export default {
-    name: 'List'
-  }
+    name: 'List',
+  };
 </script>
 <style scoped>
   .list {
-    background: #CCC;
+    background: #ccc;
   }
 </style>
