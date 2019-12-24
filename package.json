@@ -12,7 +12,7 @@
     "storybook": "start-storybook",
     "lint:css": "stylelint components/**/*.css --fix;exit 0",
     "lint:css:fix": "npm run lint:css --fix",
-    "eslint:js": "eslint components/**/*.{js,vue} --fix;exit 0",
+    "eslint:js": "eslint components/**/*.{js,vue}",
     "eslint:js:fix": "npm run eslint:js --fix",
     "pretty": "prettier --write components/**/*.{js,json,css,vue}"
   },
@@ -36,9 +36,20 @@
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.0.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "stylelint": "^12.0.0",
     "stylelint-config-prettier": "^8.0.0",
     "stylelint-config-recommended": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.(js|html|css)": [
+      "npm run pretty",
+      "git add"
+    ],
+    "*.js": [
+      "npm run eslint:js:fix"
+    ]
   }
 }

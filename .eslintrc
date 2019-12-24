@@ -89,6 +89,13 @@
       "no-invalid-this": 0,
       "no-useless-escape": 0,
       "no-console": 0,
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "vue/max-attributes-per-line": [0, {
+        "singleline": 20,
+        "multiline": {
+           "max": 1,
+           "allowFirstLine": false
+         }
+      }]
   }
 }
